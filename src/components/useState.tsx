@@ -6,12 +6,19 @@ That rerender the whole component when the state changes.
 This hook is versatile and suitable for handling simple to moderately complex state logic
 */
 
+/*
+Architecture const [count, setCount] = useState(0);
+Here, count is the value, we use 
+setCount is a setter function to update the value
+0 is the initial value
+*/
+
 const UseState = () => {
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
-    setCount(prevCount => prevCount + 1)
-  }
+    setCount((prevCount) => prevCount + 1);
+  };
 
   return (
     <div>

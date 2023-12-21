@@ -1,15 +1,13 @@
-import './App.css'
-import UseLayoutEffect from './components/useLayoutEffect'
-
+import "./App.css";
+import UseMemo from "./components/useMemo";
 
 function App() {
-
   return (
     <div>
       <h1>All About React Hooks</h1>
-      <UseLayoutEffect />
+      <UseMemo />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
